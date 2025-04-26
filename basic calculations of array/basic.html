@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  // includes()
+
+  let fruits = ["Mango", "Banana", "Lichi", "Kiwi"];
+
+  let include = fruits.includes("Mango");
+  let include1 = fruits.includes("Dragon Fruit");
+
+  console.log(fruits);
+  console.log(include);
+  console.log(include1);
+
+  // sort()
+  let fruits1 = ["Mango", "Banana", "Lichi", "Kiwi", "Apple"];
+
+  //   fruits1.sort();
+
+  //   console.log(fruits1);
+
+  //   reverse()
+
+  //   fruits1.reverse();
+
+  //   console.log(fruits1);
+
+  //
+
+  fruits1.sort();
+  fruits1.reverse();
+
+  console.log(fruits1);
+
+  // reduce()
+
+  let arr = [1, 2, 3, 4, 5, 6];
+
+  let add = arr.reduce((a, b) => a + b);
+
+  console.log(add);
+
+  // forEach() - loop
+
+  let arr1 = [11, 99, 66, 88, 33, 55, 77, 44, 22];
+
+  arr1.forEach((number, index) => console.log(index + 1 + " " + number));
+
+  let arrObj = [
+    { movie: "KGF 2", year: 2024 },
+    { movie: "Pushpa 2", year: 2025 },
+    { movie: "Salaar", year: 2024 },
+    { movie: "Chhaava", year: 2025 }
+  ];
+
+  console.log(arrObj[0].movie);
+  console.log(arrObj[1].movie);
+  console.log(arrObj[2].movie);
+  console.log(arrObj[3].movie);
+
+  arrObj.map((data, dataIndex) => console.log(data.movie, data.year));
+
+  //   let obj = {
+  // name: "Raj",
+  // age: 20,
+  // city: "Pune"
+  //   };
+
+  //   console.log(obj.name);
+  //   console.log(obj.age);
+  //   console.log(obj.city);
+
+  //   map()
+
+  let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+  let n = numbers.map((number, index) => console.log(number));
+
+  console.log(n);
+
+  // filter()
+
+  let numbers1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+  let n11 = numbers1.filter((n, i) => n % 2 === 0);
+
+  console.log(n11);
+
+  //
+</script>
